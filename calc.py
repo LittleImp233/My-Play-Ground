@@ -2,7 +2,7 @@ def add(x,y):
 	pass
 
 def subtract(x,y):
-	pass
+	x-y
 
 def myltiply(x,y):
 	return x*y
