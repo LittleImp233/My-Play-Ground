@@ -1,0 +1,15 @@
+# a = 0.3
+# b = 0.1 + 0.2
+
+# print(a)
+# print(b)
+# print(a == b) # This will print False due to floating-point precision issues
+
+def compare_floats(a: float, b: float, tol: float) -> bool:
+    absolute: float = abs(a - b)
+    print(f"{a} - {b} = {a - b}")
+    return absolute < tol
+
+first: float = 0.8
+second: float = 0.1 + 0.7
+print(compare_floats(first, second, tol=1e-10)) # 0.000000000001
